@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f7ef;
+}
+header, footer {
+    background-color: #315b38;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header {
+    background-color: #315b38;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-image: url('../img/vivero.jpg');
+    background-position: bottom;
+    height: 150px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    margin: 8px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    background-color: #315b38;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+main {
+    width: 90%;
+    margin: 20px auto;
+}
+h2, h3 {
+    color: #315b38;
+}
+a {
+    color: #315b38;
+}
+form {
+    background-color: white;
+    padding: 20px;
+}
+form div {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input, textarea, select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+}
+button {
+    background-color: #315b38;
+    color: white;
+    padding: 10px;
+    border: 0;
+}
+input[type="checkbox"] {
+    width: auto;
+}
+input[type="checkbox"] + label {
+    display: inline;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Vivero Raíz</title>
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
@@ -15,39 +16,44 @@
                 <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html">Iniciar sesión</a></li>
+                <li id="entrada"><a href="login.html">Iniciar sesión</a></li>
+                <li id="listado" hidden><a href="listado.html">Gestión de plantas</a></li>
+                <li id="salida" hidden><button type="button" id="cerrar">Cerrar sesión</button></li>
             </ul>
         </nav>
+
     </header>
 
-    <main>
+    <main class="formulario">
         <h2>Contacto</h2>
         <p>Dejanos tu consulta sobre nuestras plantas.</p>
-        <p>Este formulario es una maqueta: todavía no envía mensajes.</p>
 
         <form>
             <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <label>Nombre:
+                <input type="text"></label>
             </div>
 
             <div>
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                <label>Correo electrónico:
+                <input type="email"></label>
             </div>
 
             <div>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje"
-                          rows="5" required></textarea>
+                <label>Mensaje:
+                <textarea
+                          rows="5"></textarea></label>
             </div>
 
             <button type="button">Enviar consulta</button>
+
         </form>
     </main>
 
     <footer>
         <p>&copy; 2026 Vivero Raíz.</p>
     </footer>
+    <script src="js/sesion.js"></script>
+
 </body>
 </html>

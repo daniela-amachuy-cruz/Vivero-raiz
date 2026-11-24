@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingresar - Vivero Raíz</title>
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
@@ -15,37 +16,34 @@
                 <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html">Iniciar sesión</a></li>
+                <li id="entrada"><a href="login.html">Iniciar sesión</a></li>
+                <li id="listado" hidden><a href="listado.html">Gestión de plantas</a></li>
+                <li id="salida" hidden><button type="button" id="cerrar">Cerrar sesión</button></li>
             </ul>
         </nav>
+
     </header>
 
-    <main>
+    <main class="formulario">
         <h2>Ingresar</h2>
         <p>Gestión de catálogo</p>
-        <p>Todo lo que crece, ordenado.</p>
-        <p>Usá la cuenta que te dio el vivero.</p>
-        <p>Esta página es una maqueta: todavía no valida cuentas.</p>
 
-        <form>
+        <form id="login">
             <div>
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email"
-                       placeholder="nombre@viveroraiz.com" required>
+                <label>Correo electrónico:
+                <input type="text" id="email" name="email"
+                       placeholder="nombre@gmail.com"></label>
             </div>
 
             <div>
-                <label for="password">Contraseña:</label>
+                <label>Contraseña:
                 <input type="password" id="password"
-                       name="password" required>
+                       name="password"></label>
             </div>
+            <p>La sesión se mantiene abierta hasta que la cierres.</p>
 
-            <div>
-                <input type="checkbox" id="recordar" name="recordar">
-                <label for="recordar">Mantener la sesión abierta</label>
-            </div>
-
-            <button type="button">Ingresar</button>
+            <button type="submit">Ingresar</button>
+            <p id="mensaje" role="alert"></p>
         </form>
 
         <p>
@@ -57,14 +55,12 @@
             ¿No tenés cuenta?
             <a href="registro.html">Registrate</a>
         </p>
-
-        <p>
-            <a href="listado.html">Ver maqueta de gestión de plantas</a>
-        </p>
     </main>
 
     <footer>
         <p>&copy; 2026 Vivero Raíz.</p>
     </footer>
+    <script src="js/sesion.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>

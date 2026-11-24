@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado - Vivero Raíz</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/listado.css">
+</head>
+<body class="gestion">
+    <header>
+        <h1>Vivero Raíz</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li id="entrada"><a href="login.html">Iniciar sesión</a></li>
+                <li id="listado" hidden><a href="listado.html">Gestión de plantas</a></li>
+                <li id="salida" hidden><button type="button" id="cerrar">Cerrar sesión</button></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h2>Listado de plantas</h2>
+        <p>Plantas disponibles en el vivero.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Planta</th>
+                    <th>Precio</th>
+                    <th>Detalle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Helecho</td>
+                    <td>$8.000</td>
+                    <td><a href="planta.html#helecho">Ver</a></td>
+                </tr>
+                <tr>
+                    <td>Suculenta</td>
+                    <td>$3.500</td>
+                    <td><a href="planta.html#suculenta">Ver</a></td>
+                </tr>
+                <tr>
+                    <td>Monstera</td>
+                    <td>$15.000</td>
+                    <td><a href="planta.html#monstera">Ver</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <p><a href="formulario.html">Agregar planta (maqueta)</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vivero Raíz.</p>
+    </footer>
+    <script src="js/sesion.js"></script>
+</body>
+</html>

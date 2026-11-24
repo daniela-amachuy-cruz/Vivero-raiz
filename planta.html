@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantas - Vivero Raíz</title>
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/planta.css">
 </head>
 <body>
@@ -15,9 +16,12 @@
                 <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html">Iniciar sesión</a></li>
+                <li id="entrada"><a href="login.html">Iniciar sesión</a></li>
+                <li id="listado" hidden><a href="listado.html">Gestión de plantas</a></li>
+                <li id="salida" hidden><button type="button" id="cerrar">Cerrar sesión</button></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
@@ -25,8 +29,10 @@
 
         <article id="helecho" class="tarjeta">
             <h3>Helecho</h3>
-            <div><img src="img/Helecho.jpg" alt=""></div>
-            <p>Planta de abundantes hojas verdes.</p>
+            <div class="detalle">
+                <img src="img/Helecho.jpg" alt="Helecho">
+                <div class="descripcion">
+                    <p>Planta de abundantes hojas verdes.</p>
             <p>Precio: $8.000</p>
             <h4>Cuidados</h4>
             <ul>
@@ -35,12 +41,16 @@
                 <li>Evitar el sol directo.</li>
             </ul>
             <a href="contacto.html">Consultar por esta planta</a>
+                </div>
+            </div>
         </article>
 
         <article id="suculenta" class="tarjeta">
             <h3>Suculenta</h3>
-            <div><img src="img/suculenta.webp" alt=""></div>
-            <p>Planta pequeña que almacena agua en sus hojas.</p>
+            <div class="detalle">
+                <img src="img/suculenta.webp" alt="Suculenta">
+                <div class="descripcion">
+                    <p>Planta pequeña que almacena agua en sus hojas.</p>
             <p>Precio: $3.500</p>
             <h4>Cuidados generales</h4>
             <ul>
@@ -49,12 +59,16 @@
                 <li>Usar una maceta con drenaje.</li>
             </ul>
             <a href="contacto.html">Consultar por esta planta</a>
+                </div>
+            </div>
         </article>
 
         <article id="monstera" class="tarjeta">
             <h3>Monstera</h3>
-            <div><img src="img/monstera.jpg" alt=""></div>
-            <p>Planta de hojas grandes para decorar interiores.</p>
+            <div class="detalle">
+                <img src="img/monstera.jpg" alt="Monstera">
+                <div class="descripcion">
+                    <p>Planta de hojas grandes para decorar interiores.</p>
             <p>Precio: $15.000</p>
             <h4>Cuidados</h4>
             <ul>
@@ -63,6 +77,8 @@
                 <li>Evitar que quede agua acumulada en la maceta.</li>
             </ul>
             <a href="contacto.html">Consultar por esta planta</a>
+                </div>
+            </div>
         </article>
 
         <p><a href="catalogo.html">Volver al catálogo</a></p>
@@ -71,5 +87,6 @@
     <footer>
         <p>&copy; 2026 Vivero Raíz.</p>
     </footer>
+    <script src="js/sesion.js"></script>
 </body>
 </html>

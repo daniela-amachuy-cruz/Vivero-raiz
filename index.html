@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Vivero Raíz</title>
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -15,10 +16,13 @@
                 <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html">Iniciar sesión</a></li>
+                <li id="entrada"><a href="login.html">Iniciar sesión</a></li>
+                <li id="listado" hidden><a href="listado.html">Gestión de plantas</a></li>
+                <li id="salida" hidden><button type="button" id="cerrar">Cerrar sesión</button></li>
     
             </ul>
         </nav>
+
     </header>
 
     <main>
@@ -39,7 +43,7 @@
                     <li>Venta de macetas y accesorios.</li>
                     <li>Asesoramiento sobre el cuidado de las plantas.</li>
                 </ul>
-                <img src="img/viv chico.jpg" alt="">
+                <img src="img/viv chico.jpg" alt="Plantas del vivero">
             </div>
 
         </section>
@@ -54,5 +58,6 @@
     <footer>
         <p>&copy; 2026 Vivero Raíz.</p>
     </footer>
+    <script src="js/sesion.js"></script>
 </body>
 </html>

@@ -1,56 +1,41 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f7ef;
-}
-header, footer {
-    background-color: #315b38;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-header {
-    background-color: #315b38;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    background-image: url('../img/vivero.jpg');
-    background-position: bottom;
-    height: 150px;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-nav li {
-    display: inline-block;
-    margin: 8px;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    background-color: #315b38;
-    padding: 10px;
-    border-radius: 50px;
-}
-
-main {
-    width: 90%;
-    margin: 20px auto;
-}
-h2, h3 {
-    color: #315b38;
-}
-a {
-    color: #315b38;
-}
 .tarjeta {
     background-color: white;
     border: 1px solid #cbd8c5;
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 20px;
 }
-
-img {
-    width: 100%;
+.tarjeta h3 {
+    margin-top: 0;
+}
+.detalle {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.detalle img {
+    width: 40%;
+    max-width: 350px;
+    height: auto;
+}
+.descripcion {
+    flex: 1;
+    min-width: 0;
+}
+.descripcion p:first-child {
+    margin-top: 0;
+}
+@media (max-width: 768px) {
+    .detalle {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+    .detalle img {
+        width: 100%;
+        max-width: 350px;
+        align-self: center;
+    }
+    .tarjeta {
+        padding: 15px;
+    }
 }

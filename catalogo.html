@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo - Vivero Raíz</title>
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/catalogo.css">
 </head>
 <body>
@@ -15,9 +16,12 @@
                 <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html">Iniciar sesión</a></li>
+                <li id="entrada"><a href="login.html">Iniciar sesión</a></li>
+                <li id="listado" hidden><a href="listado.html">Gestión de plantas</a></li>
+                <li id="salida" hidden><button type="button" id="cerrar">Cerrar sesión</button></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
@@ -27,7 +31,7 @@
         <section>
             <article class="tarjeta">
                 <h3>Helecho</h3>
-                <div><img src="img/Helecho.jpg" alt=""></div>
+                <div><img src="img/Helecho.jpg" alt="Helecho"></div>
                 <p>Una planta de hojas verdes para decorar tus espacios.</p>
                 <p>Precio: $8.000</p>
                 <a href="planta.html#helecho">Ver detalles</a>
@@ -35,7 +39,7 @@
 
             <article class="tarjeta">
                 <h3>Suculenta</h3>
-                <div><img src="img/suculenta.webp" alt=""></div>
+                <div><img src="img/suculenta.webp" alt="Suculenta"></div>
                 <p>Una planta pequeña para darle vida a cualquier rincón.</p>
                 <p>Precio: $3.500</p>
                 <a href="planta.html#suculenta">Ver detalles</a>
@@ -43,7 +47,7 @@
 
             <article class="tarjeta">
                 <h3>Monstera</h3>
-                <div><img src="img/monstera.jpg" alt=""></div>
+                <div><img src="img/monstera.jpg" alt="Monstera"></div>
                 <p>Una planta de hojas grandes para decorar tu hogar.</p>
                 <p>Precio: $15.000</p>
                 <a href="planta.html#monstera">Ver detalles</a>
@@ -54,6 +58,7 @@
     <footer>
         <p>&copy; 2026 Vivero Raíz.</p>
     </footer>
+    <script src="js/sesion.js"></script>
 </body>
 </html>
 
